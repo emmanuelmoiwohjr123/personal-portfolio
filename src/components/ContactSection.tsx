@@ -1,9 +1,12 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { emailjsConfig } from '../config/emailjs';
 
 const ContactSection: React.FC = () => {
+  useEffect(() => {
+    emailjs.init(emailjsConfig.publicKey);
+  }, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,13 +24,20 @@ const ContactSection: React.FC = () => {
       setIsSubmitting(true);
       setSubmitStatus('idle');
 
-      await emailjs.sendForm(
+      console.log('EmailJS Config:', {
+        serviceId: emailjsConfig.serviceId,
+        templateId: emailjsConfig.templateId,
+        hasPublicKey: !!emailjsConfig.publicKey
+      });
+
+      const result = await emailjs.sendForm(
         emailjsConfig.serviceId,
         emailjsConfig.templateId,
         formRef.current,
         emailjsConfig.publicKey
       );
 
+      console.log('EmailJS Response:', result);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
