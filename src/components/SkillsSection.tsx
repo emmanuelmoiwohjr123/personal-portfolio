@@ -7,12 +7,12 @@ type Skill = {
 };
 
 const skills: Skill[] = [
-  { name: 'HTML', percentage: 94, color: 'bg-blue-500' },
+  { name: 'HTML', percentage: 91, color: 'bg-blue-500' },
   { name: 'CSS', percentage: 85, color: 'bg-pink-500' },
-  { name: 'JAVASCRIPT', percentage: 88, color: 'bg-yellow-500' },
-  { name: 'NODE JS', percentage: 76, color: 'bg-green-500' },
-  { name: 'BOOTSTRAP', percentage: 90, color: 'bg-purple-500' },
-  { name: 'REACT', percentage: 82, color: 'bg-blue-600' },
+  { name: 'JAVASCRIPT', percentage: 67, color: 'bg-yellow-500' },
+  { name: 'NODE JS', percentage: 56, color: 'bg-green-500' },
+  { name: 'BOOTSTRAP', percentage: 66, color: 'bg-purple-500' },
+  { name: 'REACT', percentage: 62, color: 'bg-blue-600' },
   { name: 'WORDPRESS', percentage: 92, color: 'bg-blue-400' },
 ];
 
@@ -68,7 +68,7 @@ const SkillsSection: React.FC = () => {
             <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-yellow-400"></span>
           </h2>
           <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
-            Skilled in web design, UI/UX, and responsive development—focused on creating modern, efficient, and engaging digital experiences.
+            Skilled in web design, UI/UX, and responsive development,focused on creating modern, efficient, and engaging digital experiences.
           </p>
         </div>
         
@@ -81,7 +81,7 @@ const SkillsSection: React.FC = () => {
         <div className="mt-16 bg-white p-8 rounded-2xl shadow-lg">
           <h3 className="text-xl font-bold text-gray-900 mb-6">Additional Skills & Tools</h3>
           <div className="flex flex-wrap gap-3">
-            {['Git', 'Figma', 'Redux', 'TypeScript', 'Next.js', 'Tailwind CSS', 'SASS', 'GraphQL', 'RESTful APIs', 'Firebase'].map((tool) => (
+            {['Git', 'Figma', 'Redux', 'TypeScript', 'Tailwind CSS','RESTful APIs', 'Firebase'].map((tool) => (
               <span 
                 key={tool} 
                 className="px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm hover:bg-yellow-100 hover:text-yellow-800 transition-colors duration-300"

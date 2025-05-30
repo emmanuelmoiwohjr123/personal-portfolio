@@ -7,10 +7,19 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">GET IN TOUCH</h3>
+            <h3 className="text-xl font-bold mb-4">GET IN TOUCH
+            <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-yellow-400"></span>
+            </h3>
+          
             <p className="text-gray-400 mb-4">
               Have a project in mind or just want to connect? Feel free to reach out, I'm always open to new opportunities and collaborations.
             </p>
+            <h5 className="text-xl font-bold mb-4">Email:</h5>
+            <p><a href="mailto:emmanuelmmoiwohjr@gmail.com">emmanuelmmoiwohjr@gmail.com</a></p>
+            <h5 className="text-xl mt-4 font-bold mb-4">Phone:</h5>
+            <p>+231886175012/+231772578789</p>
+            <h5 className="text-xl mt-4 font-bold mb-4">Address:</h5>
+            <p>Monrovia, Liberia</p>
           </div>
 
           <div>
@@ -26,7 +35,7 @@ const Footer: React.FC = () => {
               {[1, 2, 3, 4, 5, 6].map((item) => (
                 <div key={item} className="aspect-square bg-gray-800 rounded-lg overflow-hidden">
                   <img
-                    src={`https://images.pexels.com/photos/${1389429 + item}/pexels-photo-${1389429 + item}.jpeg?auto=compress&cs=tinysrgb&w=100`}
+                    src={`src/images/ph${item}.jpg`}
                     alt={`Project ${item}`}
                     className="w-full h-full object-cover"
                   />

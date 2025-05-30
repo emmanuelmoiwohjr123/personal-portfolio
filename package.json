@@ -2,7 +2,7 @@
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs",
+  "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
@@ -11,7 +11,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node server.js"
+    "start": "vite preview --port $PORT --host"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Palette, Users, Zap } from 'lucide-react';
+import { Code, Download, FileText, Palette, Users, Zap } from 'lucide-react';
 
 const AboutSection: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
             <div className="relative">
               <div className="w-full h-full rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="./src/images/eman.png"
                   alt="About Me"
                   className="w-full h-full object-cover"
                 />
@@ -89,10 +89,28 @@ const AboutSection: React.FC = () => {
                 Hire Me Now
               </a>
               <a 
-                href="#"
-                className="px-6 py-3 bg-transparent text-gray-900 font-medium rounded-full transition-all duration-300 inline-block ml-4 border border-gray-300 hover:border-gray-400"
+                href="/files/moiwohjr.pdf"
+                download
+                className="group px-6 py-3 bg-transparent text-gray-900 font-medium rounded-full transition-all duration-300 inline-flex items-center ml-4 border border-gray-300 hover:border-gray-400 hover:bg-gray-50"
               >
-                View Resume
+                <span className="mr-2">Download CV</span>
+                <Download 
+                  size={18} 
+                  className="transform transition-transform duration-300 group-hover:-translate-y-1" 
+                />
+              </a>
+              {/* Preview CV Button */}
+              <a 
+                href="/files/moiwohjr.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group px-6 py-3 bg-transparent text-gray-900 font-medium rounded-full transition-all duration-300 inline-flex items-center ml-4 border border-gray-300 hover:border-gray-400 hover:bg-gray-50"
+              >
+                <span className="mr-2">Preview CV</span>
+                <FileText 
+                  size={18} 
+                  className="transform transition-transform duration-300 group-hover:scale-110" 
+                />
               </a>
             </div>
           </div>

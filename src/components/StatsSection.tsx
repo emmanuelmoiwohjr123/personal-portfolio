@@ -91,7 +91,7 @@ const StatsSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <StatItem
             icon={<Calendar size={48} />}
-            value={3}
+            value={2}
             label="Years of Experience"
             suffix="+"
           />

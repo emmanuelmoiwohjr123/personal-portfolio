@@ -57,7 +57,7 @@ const ContactSection: React.FC = () => {
             <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-yellow-400"></span>
           </h2>
           <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
-            Have a project in mind or just want to connect? Feel free to reach out—I'm always open to new opportunities and collaborations.
+            Have a project in mind or just want to connect? Feel free to reach out,I'm always open to new opportunities and collaborations.
           </p>
         </div>
 
