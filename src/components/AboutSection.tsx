@@ -88,7 +88,7 @@ const AboutSection: React.FC = () => {
               >
                 Hire Me Now
               </a>
-              <a 
+              {/* <a 
                 href="/files/moiwohjr.pdf"
                 download
                 className="group px-6 py-3 bg-transparent text-gray-900 font-medium rounded-full transition-all duration-300 inline-flex items-center ml-4 border border-gray-300 hover:border-gray-400 hover:bg-gray-50"
@@ -98,7 +98,7 @@ const AboutSection: React.FC = () => {
                   size={18} 
                   className="transform transition-transform duration-300 group-hover:-translate-y-1" 
                 />
-              </a>
+              </a> */}
               {/* Preview CV Button */}
               <a 
                 href="/files/moiwohjr.pdf"

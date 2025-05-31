@@ -48,7 +48,7 @@ const HeroSection = (): JSX.Element => {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8">
                 <TypeAnimation
                   sequence={[
-                    'Web Developer',
+                    'Frontend Developer',
                     2000,
                     'UI/UX Designer',
                     2000,
