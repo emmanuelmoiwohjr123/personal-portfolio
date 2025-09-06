@@ -1,7 +1,7 @@
 import * as React from 'react';
 import type { JSX } from 'react';
 import HeroBackground from './HeroBackground';
-import { ChevronDown, Download, Github, Linkedin, Twitter } from 'lucide-react';
+import { ChevronDown, Download, Github, Linkedin, MapPin,Calendar, Coffee, Twitter } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
 
 declare global {
@@ -38,6 +38,16 @@ const HeroSection = (): JSX.Element => {
             <div className="absolute -left-4 top-10 w-1 h-32 bg-gradient-to-b from-yellow-400 to-transparent"></div>
             <div className="w-32 h-1 bg-gradient-to-r from-yellow-400 to-transparent"></div>
             <div className="space-y-4">
+            <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-2 text-sm text-gray-400">
+                  <MapPin size={16} />
+                  <span>Monrovia, Liberia</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-400">
+                  <Coffee size={16} />
+                  <span>Available for work</span>
+                </div>
+              </div>
               <h2 className="text-xl sm:text-2xl font-medium text-yellow-400 tracking-wider uppercase">
                 I'M GLAD YOU'RE HERE.
               </h2>
@@ -61,19 +71,20 @@ const HeroSection = (): JSX.Element => {
               </h2>
             </div>
             
-            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl leading-relaxed font-light">
-              I'm passionate about creating user-friendly designs and functional websites.
+            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl leading-relaxed font-light animate-fadeInUp animation-delay-600">
+              I'm passionate about creating <span className="text-yellow-400 font-medium">user-friendly designs</span> and
+              <span className="text-yellow-400 font-medium"> functional websites</span>.
               With expertise in both design and development, I bring a unique perspective
-              to every project. Let's collaborate on something great!
+              to every project. Let's collaborate on something <span className="text-yellow-400 font-medium">great</span>!
             </p>
             
             <div className="flex flex-wrap gap-4">
               <a
-                href="/files/moiwohjr.pdf"
+                href="/files/Emmanuel M Moiwoh Jr Professional Resume.pdf"
                 download
                 className="group px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-medium rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center"
               >
-                <span className="mr-2">Download CV</span>
+                <span className="mr-2">Download Resume</span>
                 <Download 
                   size={18} 
                   className="transform transition-transform duration-300 group-hover:-translate-y-1" 
@@ -81,7 +92,7 @@ const HeroSection = (): JSX.Element => {
               </a>
               <a
                 href="#projects"
-                className="px-6 py-3 bg-transparent hover:bg-gray-700 text-white border-2 border-gray-600 font-medium rounded-full transition-all duration-300"
+                className="px-6 py-3 mt-2 bg-transparent hover:bg-gray-700 text-white border-2 border-gray-600 font-medium rounded-full transition-all duration-300"
               >
                 View Projects
               </a>

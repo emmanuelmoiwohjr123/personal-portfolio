@@ -20,7 +20,7 @@ const projects: Project[] = [
     description: "A fully responsive e-commerce solution with advanced filtering and payment integration.",
     image: "src/images/ph1.jpg",
     category: "E-commerce",
-    demoLink: "https://demo.example.com",
+    demoLink: "https://modern-ecommerce-platform.onrender.com",
     githubLink: "https://github.com/example/ecommerce",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"]
   },
@@ -29,7 +29,7 @@ const projects: Project[] = [
     description: "A sleek portfolio website with smooth animations and interactive elements.",
     image: "src/images/ph2.jpg",
     category: "UI/UX",
-    demoLink: "https://demo.example.com",
+    demoLink: "https://portfolio-website-redesign.onrender.com",
     githubLink: "https://github.com/example/portfolio",
     technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"]
   },
@@ -38,7 +38,7 @@ const projects: Project[] = [
     description: "A comprehensive task management system with real-time updates and team collaboration.",
     image: "src/images/ph3.jpg",
     category: "Web Development",
-    demoLink: "https://demo.example.com",
+    demoLink: "https://task-management-dashboard-18bb.onrender.com",
     githubLink: "https://github.com/example/dashboard",
     technologies: ["React", "Firebase", "Material UI", "Chart.js"]
   },
@@ -47,9 +47,9 @@ const projects: Project[] = [
     description: "An online ordering platform for restaurants with menu management and delivery tracking.",
     image: "src/images/ph4.jpg",
     category: "E-commerce",
-    demoLink: "https://demo.example.com",
+    demoLink: "https://restaurant-ordering-system-qmv0.onrender.com",
     githubLink: "https://github.com/example/restaurant",
-    technologies: ["Vue.js", "Express", "PostgreSQL", "Mapbox"]
+    technologies: ["React","Express", "PostgreSQL", "Mapbox"]
   },
   {
     title: "Fitness Tracking App",
@@ -58,16 +58,16 @@ const projects: Project[] = [
     category: "UI/UX",
     demoLink: "https://demo.example.com",
     githubLink: "https://github.com/example/fitness",
-    technologies: ["React Native", "Redux", "Firebase", "D3.js"]
+    technologies: ["React", "Redux", "Firebase", "D3.js"]
   },
   {
     title: "Corporate Website Overhaul",
     description: "A complete redesign of a corporate website with improved UX and performance.",
     image: "src/images/ph6.jpg",
     category: "Web Development",
-    demoLink: "https://demo.example.com",
+    demoLink: "https://corporate-website-overhaul.onrender.com",
     githubLink: "https://github.com/example/corporate",
-    technologies: ["WordPress", "Elementor", "PHP", "MySQL"]
+    technologies: ["React", "Firebase", "Typescript", "MySQL"]
   }
 ];
 
@@ -84,15 +84,14 @@ const ProjectsSection: React.FC = () => {
       <WorldMapBackground />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            My <span className="text-yellow-400">Projects</span>
-            
-          </h2>
+        <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+              My <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Projects</span>
+        </h2>
           
-          <p className="text-gray-300 max-w-3xl mx-auto">
-            Explore my portfolio of web development, UI/UX design, and e-commerce projects. Each
-            project represents my commitment to creating beautiful, functional digital experiences.
-          </p>
+        <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+              Explore my portfolio of web development, UI/UX design, and e-commerce projects. Each
+              project represents my commitment to creating <span className="text-yellow-400 font-semibold">beautiful, functional</span> digital experiences.
+        </p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">

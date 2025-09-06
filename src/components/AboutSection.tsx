@@ -82,11 +82,12 @@ const AboutSection: React.FC = () => {
             </div>
             
             <div className="mt-10">
-              <a 
+            <a 
                 href="#contact"
-                className="px-6 py-3 bg-gray-900 hover:bg-gray-800 text-white font-medium rounded-full transition-all duration-300 inline-block"
+                className="group px-8 py-4 bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white font-medium rounded-full transition-all duration-300 inline-flex items-center transform hover:scale-105 hover:shadow-lg"
               >
-                Hire Me Now
+                <span className="mr-2">Hire Me Now</span>
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
               </a>
               {/* <a 
                 href="/files/moiwohjr.pdf"
@@ -101,12 +102,12 @@ const AboutSection: React.FC = () => {
               </a> */}
               {/* Preview CV Button */}
               <a 
-                href="/files/moiwohjr.pdf"
+                href="/files/Emmanuel M Moiwoh Jr Professional Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group px-6 py-3 bg-transparent text-gray-900 font-medium rounded-full transition-all duration-300 inline-flex items-center ml-4 border border-gray-300 hover:border-gray-400 hover:bg-gray-50"
+                className="group px-6 py-3 mt-2 bg-transparent text-gray-900 font-medium rounded-full transition-all duration-300 inline-flex items-center ml-4 border border-gray-300 hover:border-gray-400 hover:bg-gray-50"
               >
-                <span className="mr-2">Preview CV</span>
+                <span className="mr-2">Preview Resume</span>
                 <FileText 
                   size={18} 
                   className="transform transition-transform duration-300 group-hover:scale-110" 
